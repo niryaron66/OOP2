@@ -1,11 +1,12 @@
 //
 // Created by nirya on 10/05/2022.
 //
+class Florist;
 
 #ifndef UNTITLED_PERSON_H
 #define UNTITLED_PERSON_H
 
-class Florist;
+
 
 #include <string>
 #include <vector>

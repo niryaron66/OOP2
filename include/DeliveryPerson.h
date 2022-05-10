@@ -15,7 +15,6 @@ public :
     DeliveryPerson(string name);
 
     void deliver(Person* person,FlowersBouquet* flowersbouq);
-    string getName();
 
 
 };

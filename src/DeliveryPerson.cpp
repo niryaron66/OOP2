@@ -10,6 +10,3 @@ DeliveryPerson::DeliveryPerson(string name)  : Person(name) {
 void DeliveryPerson ::deliver(Person *person, FlowersBouquet*  flowersbouq) {
     person->acceptFlowers(flowersbouq);
 }
-string DeliveryPerson::getName() {
-    return this->getName();
-}

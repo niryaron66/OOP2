@@ -15,16 +15,16 @@ Florist::Florist(string name,Wholesaler* wholesaler1,FlowerArranger* flowerArran
 }
 
 void Florist ::acceptOrder(Person *person, vector<string> vec1) { //robin roses
-    std:: cout << "Florist" << this->getName() << "fowards request to Wholesaler" << wholesaler->getName() << ".";
-    FlowersBouquet* flowersBouquet=wholesaler->acceptOrder(vec1);
-    std:: cout << "Florist" << this->getName() << "request flowers arrangement from Flower Arranger" << flowerArranger->getName() << ".";
+    std::cout << "Florist " << this->getName() << " fowards request to Wholesaler" << wholesaler->getName() << "."<<endl;
+    FlowersBouquet *flowersBouquet = wholesaler->acceptOrder(vec1);
+    std::cout << "Florist " << this->getName() << " request flowers arrangement from Flower Arranger"
+              << flowerArranger->getName() << "."<<endl;
     flowerArranger->arrangeFlowers(flowersBouquet);
-    std:: cout << "Flower Arranger " << flowerArranger->getName() << "returns arranged flowers to Florist" << this->getName() << ".";
-    std:: cout << "Florist" << this->getName() << "fowards flowers to Delivery Person" << deliveryPerson->getName() << ".";
-    deliveryPerson->deliver(person,flowersBouquet);
+    std::cout << "Flower Arranger " << flowerArranger->getName() << " returns arranged flowers to Florist"
+              << this->getName() << "." <<endl;
+    std::cout << "Florist " << this->getName() << " fowards flowers to Delivery Person" << deliveryPerson->getName()
+              << "." <<endl;
+    deliveryPerson->deliver(person, flowersBouquet);
 
-}
-string Florist ::getName() {
-    return this->getName();
 }
 

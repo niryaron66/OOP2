@@ -15,7 +15,7 @@ public :
     Gardener(string name);
 
     FlowersBouquet* prepareBouquet(vector<string> vect1);
-    string getName();
+
 
 
 };

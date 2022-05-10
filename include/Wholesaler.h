@@ -17,7 +17,6 @@ private:
 
 public :
     FlowersBouquet* acceptOrder(vector<string> vect1);
-    string getName();
 
     Wholesaler(string name, Grower *grower1);
 };

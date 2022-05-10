@@ -15,7 +15,6 @@ public :
     FlowerArranger(string name);
 
     void arrangeFlowers(FlowersBouquet* flowersbouq);
-    string getName();
 
 
 };

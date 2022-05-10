@@ -2,6 +2,8 @@
 // Created by nirya on 10/05/2022.
 //
 #include "../include/Person.h"
+#include "../include/Florist.h"
+
 #include <iostream>
 Person::Person(string name)
 {
@@ -16,11 +18,11 @@ void Person::orderFlowers(Florist *flor, Person *person, vector<string> vec1) {
         flowers+=", ";
     }
     flowers[flowers.length()-1]='.';
-    std::cout<< this->name << "orders flowers to " << person->getName() << "from Florist" << flor->getName() << ":" << flowers <<
+    std::cout<< this->name << " orders flowers to " << person->getName() << " from Florist" << flor->getName() << ":" << flowers << endl;
     flor->acceptOrder(person,vec1);
 }
 void Person::acceptFlowers(FlowersBouquet *flBouq) {
-    std:: cout<< name <<"accepts the flowers:" << flBouq->toString();
+    std:: cout<< name <<"accepts the flowers: " << flBouq->toString()<<endl;
     delete flBouq;
 
 }
