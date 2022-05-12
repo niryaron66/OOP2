@@ -6,8 +6,7 @@
 #include "../include/Florist.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-
+    
     Person* p=new Person("Chris");
     DeliveryPerson* deliveryPerson=new DeliveryPerson("Dylan");
     FlowerArranger* flowerArranger=new FlowerArranger("Flora");
@@ -20,8 +19,6 @@ int main() {
 
     p->orderFlowers(florist,robin,vec1);
 
-    cout<<"hi there"<<endl;
-
     delete p;
     delete deliveryPerson;
     delete flowerArranger;
@@ -30,7 +27,6 @@ int main() {
     delete wholesaler;
     delete florist;
     delete robin;
-
 
     return 0;
 }

@@ -12,6 +12,10 @@ Wholesaler::Wholesaler(string name,Grower* grower1) : Person(name) {
 
 FlowersBouquet* Wholesaler ::acceptOrder( vector<string> vec1) {
     std:: cout<< "Wholesaler " << this->getName() << " fowards the request to Grower " << grower->getName() << "." <<endl;
-  return grower->prepareOrder(vec1);
+ // return
+
+    FlowersBouquet* fl12=grower->prepareOrder(vec1);
+    std:: cout << "Grower " << grower->getName() << " return flowers to Wholesaler " << this->getName() << ". " << endl;
+    return fl12;
 }
 
