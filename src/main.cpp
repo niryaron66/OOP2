@@ -16,8 +16,11 @@ int main() {
     Wholesaler* wholesaler=new Wholesaler("Watson",grower);
     Florist* florist=new Florist("Fred",wholesaler,flowerArranger,deliveryPerson);
     Person* robin=new Person("Robin");
-    vector<string> vec1 = {"Roses","Violets","Gladiouls"};
+    vector<string> vec1 = {"Roses","Violets","Gladiolus"};
+
     p->orderFlowers(florist,robin,vec1);
+
+    cout<<"hi there"<<endl;
 
     return 0;
 }

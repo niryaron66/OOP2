@@ -14,11 +14,11 @@ void FlowersBouquet ::arrange() {
 }
 string FlowersBouquet ::toString() {
     string flowers="";
-    for(string boq : bouquet)
-    {
-        flowers+=boq;
-        flowers+=", ";
+    for(int i = 0; i<bouquet.size(); i++){
+        if(i==0) flowers += bouquet.at(i);
+        else flowers += ", "+bouquet.at(i);
     }
+    flowers[flowers.length()-1]='.';
 
     return flowers;
 }
