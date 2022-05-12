@@ -13,7 +13,7 @@ Person::Person(string name)
 void Person::orderFlowers(Florist *flor, Person *person, vector<string> vec1) {
     string flowers="";
     for(int i = 0; i<vec1.size(); i++){
-        if(i==0) flowers += vec1.at(i);
+        if(i==0) flowers += " "+vec1.at(i);
         else flowers += ", "+vec1.at(i);
     }
     flowers[flowers.length()-1]='.';

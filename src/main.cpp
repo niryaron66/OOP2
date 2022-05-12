@@ -22,5 +22,15 @@ int main() {
 
     cout<<"hi there"<<endl;
 
+    delete p;
+    delete deliveryPerson;
+    delete flowerArranger;
+    delete gardener;
+    delete grower;
+    delete wholesaler;
+    delete florist;
+    delete robin;
+
+
     return 0;
 }
