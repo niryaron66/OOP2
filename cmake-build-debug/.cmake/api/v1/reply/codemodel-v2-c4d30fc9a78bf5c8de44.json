@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.21"
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "untitled::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-untitled-Debug-db782c200f49ea48fa59.json",
+					"jsonFile" : "target-untitled-Debug-5370500f957cb55f0557.json",
 					"name" : "untitled",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/Yaron/BGU/SemesterB/monche/nir2/OOP2/cmake-build-debug",
-		"source" : "D:/Yaron/BGU/SemesterB/monche/nir2/OOP2"
+		"build" : "/cygdrive/c/Users/nirya/CLionProjects/untitled/cmake-build-debug",
+		"source" : "/cygdrive/c/Users/nirya/CLionProjects/untitled"
 	},
 	"version" : 
 	{
