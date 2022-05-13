@@ -13,3 +13,7 @@ FlowersBouquet* Gardener ::prepareBouquet( vector<string> vec1) {
     std:: cout << "Gradener " << this->getName() << " prepares flowers." <<endl;
     return new FlowersBouquet(vec1);
 }
+
+string Gardener :: getName() {
+    return "Gardener  " + Person :: getName();
+}

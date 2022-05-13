@@ -17,7 +17,7 @@ class Florist;
 using namespace std;
 
 class Person {
-private :
+protected :
 
     string name;
 
@@ -26,6 +26,6 @@ public :
     void acceptFlowers(FlowersBouquet* flBouq);
 
     Person(string name);
-    string getName();
+    virtual string getName();
 };
 #endif //UNTITLED_PERSON_H

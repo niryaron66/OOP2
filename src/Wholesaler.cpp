@@ -15,3 +15,6 @@ FlowersBouquet* Wholesaler ::acceptOrder( vector<string> vec1) {
   return grower->prepareOrder(vec1);
 }
 
+string Wholesaler :: getName() {
+    return "Wholesaler  " + Person :: getName();
+}

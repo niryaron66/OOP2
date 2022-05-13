@@ -13,6 +13,7 @@ class Gardener : public Person {
 
 public :
     Gardener(string name);
+    string getName();
 
     FlowersBouquet* prepareBouquet(vector<string> vect1);
 

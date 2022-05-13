@@ -27,4 +27,7 @@ void Florist ::acceptOrder(Person *person, vector<string> vec1) { //robin roses
     deliveryPerson->deliver(person, flowersBouquet);
 
 }
+string Florist :: getName() {
+    return "Florist " + Person :: getName();
+}
 

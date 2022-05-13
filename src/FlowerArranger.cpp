@@ -12,3 +12,7 @@ void FlowerArranger ::arrangeFlowers(FlowersBouquet* flowersbouq) {
     std:: cout << " Flower Arranger " << this->getName() << "arranges flowers." <<endl;
     flowersbouq->arrange();
 }
+
+string FlowerArranger :: getName() {
+    return "Flower Arranger  " + Person :: getName();
+}

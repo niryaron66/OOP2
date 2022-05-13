@@ -13,6 +13,7 @@ class DeliveryPerson : public Person {
 
 public :
     DeliveryPerson(string name);
+        string getName();
 
     void deliver(Person* person,FlowersBouquet* flowersbouq);
 

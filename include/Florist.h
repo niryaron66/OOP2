@@ -22,7 +22,7 @@ private:
 
 public :
     void acceptOrder(Person* person,vector<string> vec1);
-
+    string getName();
     Florist(string name, Wholesaler *wholesaler1, FlowerArranger *flowerArranger1, DeliveryPerson *deliveryPerson1);
 };
 #endif //UNTITLED_FLORIST_H

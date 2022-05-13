@@ -15,3 +15,6 @@ FlowersBouquet* Grower ::prepareOrder( vector<string> vec1) {
     std:: cout << "Gardener " << gardener->getName() << " return flowers to Grower " << this->getName() << ". " << endl;
     return fl;
 }
+string Grower :: getName() {
+    return "Grower  " + Person :: getName();
+}

@@ -16,6 +16,7 @@ private:
 
 public :
     FlowersBouquet* prepareOrder(vector<string> vect1);
+        string getName();
 
 
 

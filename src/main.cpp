@@ -5,7 +5,7 @@
 #include "../include/DeliveryPerson.h"
 #include "../include/Florist.h"
 
-int main() {
+int main(int argc, char *argv[]) {
     std::cout << "Hello, World!" << std::endl;
 
     Person* p=new Person("Chris");
