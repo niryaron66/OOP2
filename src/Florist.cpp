@@ -15,14 +15,16 @@ Florist::Florist(string name,Wholesaler* wholesaler1,FlowerArranger* flowerArran
 }
 
 void Florist ::acceptOrder(Person *person, vector<string> vec1) { //robin roses
-    std::cout << "Florist " << this->getName() << " fowards request to Wholesaler" << wholesaler->getName() << "."<<endl;
+    std::cout << this->getName() << " fowards request to " << wholesaler->getName() << "."<<endl;
     FlowersBouquet *flowersBouquet = wholesaler->acceptOrder(vec1);
-    std::cout << "Florist " << this->getName() << " request flowers arrangement from Flower Arranger"
+    std::cout << wholesaler->getName() << " returns flowers to " << this->getName() << "." << endl;
+        //Wholesaler Watson returns flowers to Florist Fred.
+    std::cout <<  this->getName() << " request flowers arrangement from "
               << flowerArranger->getName() << "."<<endl;
     flowerArranger->arrangeFlowers(flowersBouquet);
-    std::cout << "Flower Arranger " << flowerArranger->getName() << " returns arranged flowers to Florist"
+    std::cout <<  flowerArranger->getName() << " returns arranged flowers to "
               << this->getName() << "." <<endl;
-    std::cout << "Florist " << this->getName() << " fowards flowers to Delivery Person" << deliveryPerson->getName()
+    std::cout <<  this->getName() << " fowards flowers to " << deliveryPerson->getName()
               << "." <<endl;
     deliveryPerson->deliver(person, flowersBouquet);
 

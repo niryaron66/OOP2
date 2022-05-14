@@ -19,6 +19,6 @@ string FlowersBouquet ::toString() {
         flowers+=boq;
         flowers+=", ";
     }
-
+    flowers = flowers.substr(0, flowers.size() - 2) + ".";
     return flowers;
 }

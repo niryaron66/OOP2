@@ -9,7 +9,7 @@ FlowerArranger::FlowerArranger(string name)  : Person(name) {
 }
 
 void FlowerArranger ::arrangeFlowers(FlowersBouquet* flowersbouq) {
-    std:: cout << " Flower Arranger " << this->getName() << "arranges flowers." <<endl;
+    std:: cout <<   this->getName() << " arranges flowers." <<endl;
     flowersbouq->arrange();
 }
 

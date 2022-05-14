@@ -8,16 +8,29 @@
 int main(int argc, char *argv[]) {
     std::cout << "Hello, World!" << std::endl;
 
-    Person* p=new Person("Chris");
-    DeliveryPerson* deliveryPerson=new DeliveryPerson("Dylan");
-    FlowerArranger* flowerArranger=new FlowerArranger("Flora");
-    Gardener* gardener= new Gardener("Garret");
-    Grower* grower=new Grower("Gray",gardener);
-    Wholesaler* wholesaler=new Wholesaler("Watson",grower);
-    Florist* florist=new Florist("Fred",wholesaler,flowerArranger,deliveryPerson);
+    Person* chris=new Person("Chris");
+    DeliveryPerson* dylan=new DeliveryPerson("Dylan");
+    FlowerArranger* flora=new FlowerArranger("Flora");
+    Gardener* garret= new Gardener("Garret");
+    Grower* gray=new Grower("Gray",garret);
+    Wholesaler* watson=new Wholesaler("Watson",gray);
+    Florist* fred=new Florist("Fred",watson,flora,dylan);
     Person* robin=new Person("Robin");
-    vector<string> vec1 = {"Roses","Violets","Gladiouls"};
-    p->orderFlowers(florist,robin,vec1);
 
+    vector<string> vec1 = {"Roses","Violets","Gladiouls"};
+
+    std::cout << "adir" << endl;
+    chris->orderFlowers(fred,robin,vec1);
+    std::cout << "adir" << endl;
+    delete chris;
+    delete dylan;
+    delete flora;
+    delete gray;
+    delete garret;
+    delete watson;
+    delete fred;
+    delete robin;
+    
     return 0;
+    
 }

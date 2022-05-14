@@ -10,10 +10,10 @@ Gardener::Gardener(string name) : Person(name) {
 }
 
 FlowersBouquet* Gardener ::prepareBouquet( vector<string> vec1) {
-    std:: cout << "Gradener " << this->getName() << " prepares flowers." <<endl;
+    std:: cout << this->getName() << " prepares flowers." <<endl;
     return new FlowersBouquet(vec1);
 }
 
 string Gardener :: getName() {
-    return "Gardener  " + Person :: getName();
+    return "Gardener " + Person :: getName();
 }

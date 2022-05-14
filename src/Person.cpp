@@ -17,12 +17,12 @@ void Person::orderFlowers(Florist *flor, Person *person, vector<string> vec1) {
         flowers+=boq;
         flowers+=", ";
     }
-    flowers[flowers.length()-1]='.';
-    std::cout<< this->name << " orders flowers to " << person->getName() << " from Florist" << flor->getName() << ":" << flowers << endl;
+    flowers = flowers.substr(0, flowers.size() - 2) + ".";
+    std::cout<< this->name << " orders flowers to " << person->getName() << " from " << flor->getName() << ":" << flowers << endl;
     flor->acceptOrder(person,vec1);
 }
 void Person::acceptFlowers(FlowersBouquet *flBouq) {
-    std:: cout<< name <<"accepts the flowers: " << flBouq->toString()<<endl;
+    std:: cout<< name <<" accepts the flowers: " << flBouq->toString()<<endl;
     delete flBouq;
 
 }
